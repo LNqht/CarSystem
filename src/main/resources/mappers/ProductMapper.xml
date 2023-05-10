@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口-->
+<mapper namespace="com.qiuhongtao.dao.ProductMapper">
+
+    <insert id="addProduct" parameterType="product">
+        insert into product (ProductName, ProductDescription, picture, price, CategoryId, Stock, Sell)
+        values (#{productName},#{productDescription},#{picture},#{price},#{categoryId},#{stock},#{sell})
+    </insert>
+
+    <select id="findAll" resultType="product">
+        select * from product
+    </select>
+    
+    <select id="findById" resultType="product">
+        select * from product where ProductId = #{productId}
+    </select>
+    
+    <select id="getPicture" resultType="product">
+        select * from product where ProductId = #{productId}
+    </select>
+
+    <select id="findByCategoryId" resultType="product">
+        select * from product where CategoryId = #{categoryId}
+    </select>
+
+    <select id="findItemByOrderId" resultType="product">
+        select * from orderdetail AS o
+                          INNER JOIN product AS p
+                                     ON o.ProductId = p.ProductId
+        where o.OrderId = #{orderId}
+    </select>
+    
+    <update id="update" parameterType="product">
+        update product set price = #{price}, Stock = #{stock}, ProductDescription = #{productDescription}
+        where ProductId = #{productId}
+    </update>
+
+    <update id="updateStockandSell" parameterType="product">
+        update product set Stock = #{stock}, Sell = #{sell}
+        where ProductId = #{productId}
+    </update>
+
+    <delete id="delete" parameterType="product">
+        delete from product where ProductId = #{productId}
+    </delete>
+</mapper>

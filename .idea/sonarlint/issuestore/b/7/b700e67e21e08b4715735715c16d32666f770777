@@ -1,0 +1,8 @@
+
+U	java:S106"9Replace this use of System.out or System.err by a logger.(˜Ôğ8Ì¹´¶ÿ0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÌÃÈà8Í¹´¶ÿ0
+M
+java:S1128
+"0Remove this unused import 'java.io.PrintWriter'.(ÓŞÏÛ8Âı±¶ÿ0
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8Âı±¶ÿ0

@@ -1,0 +1,12 @@
+
+o
+java:S20958"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(«ÄÒûÿÿÿÿ8’¿‹Üÿ0
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8œ¿‹Üÿ0
+u
+java:S1128
+"SRemove this unused import 'org.springframework.web.bind.annotation.RestController'.(±íþ¡þÿÿÿÿ8œ¿‹Üÿ0
+N
+java:S1128"1Remove this unused import 'javax.servlet.Filter'.(þé®ä8œ¿‹Üÿ0
+[
+java:S1128">Remove this unused import 'java.nio.charset.StandardCharsets'.(ï˜ÞÛ8œ¿‹Üÿ0

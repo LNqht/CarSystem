@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口-->
+<mapper namespace="com.qiuhongtao.dao.UserMapper">
+    <insert id="addUser" parameterType="user">
+        insert into usertable (username,password,email,gender,birthdate)
+        values (#{username}, #{password}, #{email}, #{gender}, #{birthdate})
+    </insert>
+
+    <select id="findById" resultType="user">
+        select * from  usertable where id = #{id}
+    </select>
+
+    <select id="findByUsernamePassword" resultType="user">
+        select * from usertable where username = #{username} and password = #{password}
+    </select>
+
+    <update id="updateUser" parameterType="user">
+        update usertable set password = #{password}, email = #{email}, gender = #{gender}, birthdate = #{birthdate}
+        where id = #{id}
+    </update>
+
+</mapper>

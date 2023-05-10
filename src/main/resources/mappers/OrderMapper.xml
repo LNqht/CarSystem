@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace绑定一个对应的Mapper接口-->
+<mapper namespace="com.qiuhongtao.dao.OrderMapper">
+    <select id="findAll" resultType="order">
+        select * from `order`
+    </select>
+
+    <select id="findByUserId" resultType="order">
+        select * from `order` where CustomerId = #{customerId}
+    </select>
+    
+    <select id="findByOrderIdandProductId" resultType="item">
+        select * from orderdetail where OrderId = #{orderId} and ProductId = #{productId}
+    </select>
+
+    <insert id="addOrder" parameterType="order">
+        insert into `order` (CustomerId, PaymentId, OrderDate, Name, Address, City, State, PostalCode, Country, Phone, OrderTotal)
+        values (#{customerId}, #{paymentId}, now(), #{name}, #{address}, #{city}, #{state}, #{postalCode}, #{country}, #{phone}, #{orderTotal})
+    </insert>
+
+    <select id="search" resultType="int">
+        select last_insert_id()
+    </select>
+
+    <insert id="addOrderDetails" parameterType="order">
+        insert into orderdetail (OrderId, ProductId, Price, Quantity, Total)
+        values (#{orderId}, #{productId}, #{price}, #{quantity}, #{total})
+    </insert>
+</mapper>
