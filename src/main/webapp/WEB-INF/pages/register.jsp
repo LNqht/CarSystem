@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@include file="header.jsp"%>
+
 <section id="form">
 		<div class="container">
 			<div class="row">
@@ -49,17 +50,19 @@
 <%if(!(request.getAttribute("message")==null)){
     out.println("<h3>"+request.getAttribute("message")+"</h3>");
 }%>
-<form method="post" action="<%=basePath+"toregister"%>">
-    <input type="text" name="username" placeholder="账户名" />  <input type="password" name="password" placeholder="密码" />   <input type="text" name="email" placeholder="邮箱地址">
+<form id="reg-form" method="post" action="<%=basePath+"toregister"%>">
+    <input type="text" name="username" placeholder="账户名" />  <input type="password" name="password" placeholder="密码" />   <input id="email" type="text" name="email" placeholder="邮箱地址"> <span></span>
+    <input id="code" name="code" type="text" placeholder="验证码">  <span></span> <input id="e-btn" type="button" value="获取验证码" disabled="">
  <label> 性别 </label><span> &nbsp;<input type="radio"
 style="width: 15px; height: 15px; display:inline;" name="gender" value="男" />&nbsp;男&nbsp;<input type="radio" style="width: 15px; height: 15px;   display: inline;" name="gender" value="女"/>&nbsp;女</span>
    <span></span>
    <input type="text" name="birthdate" placeholder="出生日期(yyyy-mm-dd)">
-    <button type="submit" class="btn btn-default">注册</button>
+    <button id="reg-btn" type="submit" class="btn btn-default" >注册</button>
 </form>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+<script type="text/javascript" src="<%=basePath%>js/email.js"></script>
 <%@include file="footer.jsp"%>

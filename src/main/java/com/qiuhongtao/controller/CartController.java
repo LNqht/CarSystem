@@ -16,7 +16,7 @@ import java.util.List;
 @Controller
 public class CartController {
     @Resource
-    ProductService productService;
+    private ProductService productService;
 
     private int isExisting(int id,List<Item> cart){
         for(int i=0;i<cart.size();i++){

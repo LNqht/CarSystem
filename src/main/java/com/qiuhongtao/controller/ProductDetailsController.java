@@ -16,9 +16,9 @@ import java.util.List;
 @Controller
 public class ProductDetailsController {
     @Resource
-    ProductService productService;
+    private ProductService productService;
     @Resource
-    CategoryService categoryService;
+    private CategoryService categoryService;
 
     @RequestMapping("/productDetails")
     public ModelAndView productDetails(Integer id, HttpServletRequest request) {

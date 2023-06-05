@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 @SessionAttributes(value = "user")
 public class UpdateUserController {
     @Resource
-    UserService userService;
+    private UserService userService;
 
     @RequestMapping("/updateUser")
     public String updateUser() {

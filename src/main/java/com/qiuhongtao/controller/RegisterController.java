@@ -13,7 +13,7 @@ import java.util.List;
 @Controller
 public class RegisterController {
     @Resource
-    UserService userService;
+    private UserService userService;
 
     @RequestMapping("/register")
     public String register() {

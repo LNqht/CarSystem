@@ -15,19 +15,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Controller
+@RequestMapping("/admin")
 public class AdminController {
     @Resource
-    UserService userService;
+    private UserService userService;
     @Resource
-    ProductService productService;
+    private ProductService productService;
     @Resource
-    CategoryService categoryService;
+    private CategoryService categoryService;
     @Resource
-    PaymentService paymentService;
+    private PaymentService paymentService;
     @Resource
-    OrderService orderService;
+    private OrderService orderService;
 
-    @RequestMapping("/admin/home")
+    @RequestMapping("/home")
     public ModelAndView adminhome(HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
@@ -46,7 +47,7 @@ public class AdminController {
         return modelAndView;
     }
 
-    @RequestMapping("/admin/productList")
+    @RequestMapping("/productList")
     public ModelAndView productList(HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
@@ -67,7 +68,7 @@ public class AdminController {
         }
         return modelAndView;
     }
-    @RequestMapping("/admin/addProduct")
+    @RequestMapping("/addProduct")
     public ModelAndView addProduct(HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
@@ -85,7 +86,7 @@ public class AdminController {
         }
         return modelAndView;
     }
-    @RequestMapping("/admin/toaddProduct")
+    @RequestMapping("/toaddProduct")
     public ModelAndView toaddProduct(Product product) {
         String filename = product.getFile().getOriginalFilename();
         String path = "C:\\Users\\涛\\Desktop\\system\\src\\main\\webapp\\WEB-INF\\images\\home\\"+filename;
@@ -100,7 +101,7 @@ public class AdminController {
         }
         return modelAndView;
     }
-    @RequestMapping("/admin/productEdit")
+    @RequestMapping("/productEdit")
     public ModelAndView productEdit(HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
@@ -119,7 +120,7 @@ public class AdminController {
         }
         return modelAndView;
     }
-    @RequestMapping("/admin/toproductEdit")
+    @RequestMapping("/toproductEdit")
     public ModelAndView toproductEdit(Product product, HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
@@ -142,7 +143,7 @@ public class AdminController {
         }
         return modelAndView;
     }
-    @RequestMapping("/admin/productDelete")
+    @RequestMapping("/productDelete")
     public ModelAndView productDelete(HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
@@ -161,12 +162,12 @@ public class AdminController {
         }
         return modelAndView;
     }
-    @RequestMapping("/admin/toproductDelete")
+    @RequestMapping("/toproductDelete")
     public ModelAndView toproductDelete(int productId) {
         productService.delete(productId);
         return new ModelAndView("redirect:/admin/productList");
     }
-    @RequestMapping("/admin/orderList")
+    @RequestMapping("/orderList")
     public ModelAndView orderList(HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
@@ -190,7 +191,7 @@ public class AdminController {
         }
         return modelAndView;
     }
-    @RequestMapping("/admin/userList")
+    @RequestMapping("/userList")
     public ModelAndView userList(HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();
@@ -208,7 +209,7 @@ public class AdminController {
         }
         return modelAndView;
     }
-    @RequestMapping("/admin/incomeList")
+    @RequestMapping("/incomeList")
     public ModelAndView incomeList(HttpServletRequest request) {
         HttpSession session = request.getSession();
         ModelAndView modelAndView = new ModelAndView();

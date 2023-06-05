@@ -25,9 +25,9 @@ import java.util.List;
 @Controller
 public class ShopController {
     @Resource
-    CategoryService categoryService;
+    private CategoryService categoryService;
     @Resource
-    ProductService productService;
+    private ProductService productService;
 
     @RequestMapping("/shop")
     public ModelAndView shop(HttpServletRequest request) {

@@ -21,6 +21,15 @@
         <property name="username" value="${jdbc.username}"/>
         <property name="password" value="${jdbc.password}"/>
     </bean>
+    <!--配置JavaMailSender，这里配置的是QQ邮箱-->
+    <bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="port" value="${spring.mail.port}"/>
+        <property name="host" value="${spring.mail.host}"/>
+        <property name="username" value="${spring.mail.username}"/>
+        <property name="password" value="${spring.mail.password}"/>
+        <property name="defaultEncoding" value="${spring.mail.default-encoding}"/>
+        <property name="protocol" value="${spring.mail.protocol}"/>
+    </bean>
     <!-- 声明SqlSessionFactoryBean，在这个类的内部，创建SqlSessionFactory对象，之后就可以获取SqlSession对象 -->
     <bean id="factory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="myDataSource"/>

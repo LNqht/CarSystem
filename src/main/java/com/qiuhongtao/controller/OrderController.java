@@ -19,11 +19,11 @@ import java.util.Set;
 @Controller
 public class OrderController {
     @Resource
-    ProductService productService;
+    private ProductService productService;
     @Resource
-    PaymentService paymentService;
+    private PaymentService paymentService;
     @Resource
-    OrderService orderService;
+    private OrderService orderService;
 
     @RequestMapping("/order")
     public ModelAndView order(HttpServletRequest request) {

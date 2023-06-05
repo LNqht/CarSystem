@@ -17,9 +17,9 @@ import java.util.List;
 @Controller
 public class AccountDetailsController {
     @Resource
-    PaymentService paymentService;
+    private PaymentService paymentService;
     @Resource
-    OrderService orderService;
+    private OrderService orderService;
 
     @RequestMapping("/accountDetails")
     public ModelAndView accountDetails(HttpServletRequest request) {

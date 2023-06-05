@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 @SessionAttributes(value = "user")  //将model中的数据同步到session中
 public class LoginController {
     @Resource
-    UserService userService;
+    private UserService userService;
 
     @RequestMapping("/login")
     public String login(){

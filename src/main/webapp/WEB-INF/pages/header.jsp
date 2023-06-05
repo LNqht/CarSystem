@@ -20,6 +20,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<link href="<%=basePath%>css/main.css" rel="stylesheet">
 	<link href="<%=basePath%>css/responsive.css" rel="stylesheet">
     <script src="<%=basePath%>js/html5shiv.js"></script>
+	<script src="<%=basePath%>js/jquery.js"></script>
 </head>
 <body>
 	<header id="header">

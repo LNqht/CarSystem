@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ApifoxUploaderProjectSetting">
+    <option name="apifoxAccessToken" value="APS-CygGINoHyMenU6HBDzkQnfZQbMT16k4G" />
+    <option name="apifoxApiOverwriteMode" value="覆盖所有字段" />
+    <option name="apifoxProjectIds">
+      <array>
+        <option value="# ModuleName:ProjectID" />
+        <option value="mall-admin:2716290,管理后台" />
+        <option value="system:2716290" />
+      </array>
+    </option>
+    <option name="yapiTokens" value="" />
+  </component>
+</project>
