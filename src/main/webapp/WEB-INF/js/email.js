@@ -47,13 +47,28 @@ $("#e-btn").click(function (){
     // },1000);
 })
 
-$("#reg-btn").click(function (event){
+$("#code").blur(function (){
     var code = $("#code").val();    //获取用户输入的验证码
     var url = "checkEmailCode?code=" + code;
     $.get(url,function (result) {
-       console.log(result);
-       if (result == "校验失败") {
-           event.preventDefault();
-       }
+        console.log(result);
+        if (result.indexOf("校验失败") == 1) {
+            $("#reg-btn").click(function (event) {
+                event.preventDefault();
+                alert("验证码错误!");
+                document.location.href = window.location.pathname;
+            })
+        }
     });
-});
+})
+
+// $("#reg-btn").click(function (event){
+//     var code = $("#code").val();    //获取用户输入的验证码
+//     var url = "checkEmailCode?code=" + code;
+//     $.get(url,function (result) {
+//        console.log(result);
+//        if (result == "校验失败") {
+//            event.preventDefault();
+//        }
+//     });
+// });

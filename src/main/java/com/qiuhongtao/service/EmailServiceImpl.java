@@ -19,7 +19,7 @@ public class EmailServiceImpl implements EmailService{
 
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         //设置发件邮箱
-        simpleMailMessage.setFrom("q1532283026@qq.com");
+        simpleMailMessage.setFrom("1532283026@qq.com");
         //收件人邮箱
         simpleMailMessage.setTo(toEmail);
         //主题标题
