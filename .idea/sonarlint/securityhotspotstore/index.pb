@@ -143,5 +143,13 @@ u
 Esrc/main/java/com/qiuhongtao/controller/ProductDetailsController.java,2\d\2d2ba0bb26aafe108da6e716d18c9f42a828c4bb
 w
 G.idea/sonarlint/issuestore/8/9/890c5789f8d7ce0775e50f2fc451efc74906bf50,2\2\22a34e9e0344313d57e9ee68589b7a3936c81ffc
+f
+6src/main/java/com/qiuhongtao/service/EmailService.java,3\a\3a53e7a8abaa0497da2341780d16656d4c883d91
+Z
+*src/main/webapp/WEB-INF/pages/register.jsp,1\4\14f67adc1cfaa55aa38b7e0d0a82518b52348aa4
+S
+#src/main/webapp/WEB-INF/js/email.js,f\e\fe5911f6681fcfcba422ceace4c60b5595047e1a
 X
 (src/main/webapp/WEB-INF/pages/header.jsp,3\2\320aee4a387ebb980a24518777065b259ef25227
+l
+<src/main/java/com/qiuhongtao/controller/EmailController.java,0\5\05fa64f0adf8474e73d0965a198e0ce52964f5b3

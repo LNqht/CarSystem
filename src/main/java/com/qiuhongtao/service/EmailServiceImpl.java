@@ -1,6 +1,7 @@
 package com.qiuhongtao.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
@@ -13,13 +14,14 @@ public class EmailServiceImpl implements EmailService{
     @Autowired
     private JavaMailSender javaMailSender;
 
-
+    @Value("${spring.mail.username}")
+    private String tofrom;
     @Override
     public boolean sendEmail(String toEmail, String text, String message) {
 
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         //设置发件邮箱
-        simpleMailMessage.setFrom("1532283026@qq.com");
+        simpleMailMessage.setFrom(tofrom);
         //收件人邮箱
         simpleMailMessage.setTo(toEmail);
         //主题标题

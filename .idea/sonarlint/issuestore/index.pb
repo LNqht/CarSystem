@@ -125,8 +125,6 @@ l
 <src/main/java/com/qiuhongtao/controller/AdminController.java,7\f\7fdf82c63f1f4dc7684e34f67ce91e58686dbbcc
 k
 ;src/main/java/com/qiuhongtao/controller/CartController.java,4\4\4471b788c1c2e3d92a499eb59aa25631eb7ce3d1
-X
-(src/main/webapp/WEB-INF/pages/header.jsp,3\2\320aee4a387ebb980a24518777065b259ef25227
 l
 <src/main/java/com/qiuhongtao/controller/LoginController.java,7\6\768fb33023def198878d69f58027570af324d87c
 _
@@ -145,3 +143,13 @@ q
 Asrc/main/java/com/qiuhongtao/controller/UpdateUserController.java,7\e\7e0615451f011e0fe983d083f9f38e47fc64e7bc
 O
 src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+Z
+*src/main/webapp/WEB-INF/pages/register.jsp,1\4\14f67adc1cfaa55aa38b7e0d0a82518b52348aa4
+f
+6src/main/java/com/qiuhongtao/service/EmailService.java,3\a\3a53e7a8abaa0497da2341780d16656d4c883d91
+S
+#src/main/webapp/WEB-INF/js/email.js,f\e\fe5911f6681fcfcba422ceace4c60b5595047e1a
+X
+(src/main/webapp/WEB-INF/pages/header.jsp,3\2\320aee4a387ebb980a24518777065b259ef25227
+l
+<src/main/java/com/qiuhongtao/controller/EmailController.java,0\5\05fa64f0adf8474e73d0965a198e0ce52964f5b3
