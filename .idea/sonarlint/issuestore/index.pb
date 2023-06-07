@@ -47,8 +47,6 @@ W
 'src/main/webapp/WEB-INF/pages/order.jsp,d\9\d93fb44d96458ef6e38aeb1b1df4f57b1d7cdc79
 `
 0src/main/webapp/WEB-INF/pages/productDetails.jsp,b\e\be103229551768892043b3176bbccb23591da609
-W
-'src/main/webapp/WEB-INF/pages/index.jsp,3\e\3eb6fdad545383afba80f78ccc2903936fbb0ea9
 i
 9src/main/java/com/qiuhongtao/service/CategoryService.java,c\1\c1c2dca506aa8c570f42d3a7a40418941c4e02d9
 m
@@ -75,8 +73,6 @@ _
 +src/main/java/com/qiuhongtao/pojo/User.java,3\2\3206fc60da831a4fdc59b54861b46c16d50d3ca4
 `
 0src/main/java/com/qiuhongtao/dao/UserMapper.java,7\d\7d83a7c318be41a8a91261d4f5a371e215f0ef41
-W
-'src/main/webapp/WEB-INF/pages/login.jsp,c\1\c107b7abb068a2d3ce0fcc79bbba601cf5055776
 p
 @src/main/java/com/qiuhongtao/controller/ContactUSController.java,4\0\40d78c018f38759951f6591384b6e001c5ea2e5d
 k
@@ -89,8 +85,6 @@ T
 $src/main/webapp/WEB-INF/js/jquery.js,7\6\76b1760a856f9bf300449091e2d6b5a0bca90e34
 X
 (src/main/webapp/WEB-INF/pages/footer.jsp,f\4\f4c18f19042b8674f7d1311554a892baac87d8e8
-W
-'.idea/artifacts/system_war_exploded.xml,2\9\29861c3c4bdfb3f6cfecfd52c54ba1824c5ec1a0
 w
 G.idea/sonarlint/issuestore/b/e/be103229551768892043b3176bbccb23591da609,d\c\dc10e7d856191f5b4be3dc48144788cc36843f36
 w
@@ -125,14 +119,10 @@ l
 <src/main/java/com/qiuhongtao/controller/AdminController.java,7\f\7fdf82c63f1f4dc7684e34f67ce91e58686dbbcc
 k
 ;src/main/java/com/qiuhongtao/controller/CartController.java,4\4\4471b788c1c2e3d92a499eb59aa25631eb7ce3d1
-l
-<src/main/java/com/qiuhongtao/controller/LoginController.java,7\6\768fb33023def198878d69f58027570af324d87c
 _
 /src/main/java/com/qiuhongtao/util/MailUtil.java,9\4\94aa985552c9a498084e90aa8ba84eb64bb4c123
 l
 <src/main/java/com/qiuhongtao/controller/OrderController.java,6\d\6d292436433885293f833ca119f474b1e25bfda3
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 u
 Esrc/main/java/com/qiuhongtao/controller/ProductDetailsController.java,2\d\2d2ba0bb26aafe108da6e716d18c9f42a828c4bb
 o
@@ -149,7 +139,9 @@ f
 6src/main/java/com/qiuhongtao/service/EmailService.java,3\a\3a53e7a8abaa0497da2341780d16656d4c883d91
 S
 #src/main/webapp/WEB-INF/js/email.js,f\e\fe5911f6681fcfcba422ceace4c60b5595047e1a
-X
-(src/main/webapp/WEB-INF/pages/header.jsp,3\2\320aee4a387ebb980a24518777065b259ef25227
 l
 <src/main/java/com/qiuhongtao/controller/EmailController.java,0\5\05fa64f0adf8474e73d0965a198e0ce52964f5b3
+j
+:src/main/java/com/qiuhongtao/service/EmailServiceImpl.java,1\f\1f1b5283166cccfd2a2f407ebabe2e46d5464316
+W
+'src/main/webapp/WEB-INF/pages/index.jsp,3\e\3eb6fdad545383afba80f78ccc2903936fbb0ea9

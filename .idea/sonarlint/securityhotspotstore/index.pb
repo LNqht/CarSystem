@@ -47,8 +47,6 @@ W
 'src/main/webapp/WEB-INF/pages/order.jsp,d\9\d93fb44d96458ef6e38aeb1b1df4f57b1d7cdc79
 `
 0src/main/webapp/WEB-INF/pages/productDetails.jsp,b\e\be103229551768892043b3176bbccb23591da609
-W
-'src/main/webapp/WEB-INF/pages/index.jsp,3\e\3eb6fdad545383afba80f78ccc2903936fbb0ea9
 i
 9src/main/java/com/qiuhongtao/service/CategoryService.java,c\1\c1c2dca506aa8c570f42d3a7a40418941c4e02d9
 m
@@ -75,8 +73,6 @@ _
 0src/main/java/com/qiuhongtao/dao/UserMapper.java,7\d\7d83a7c318be41a8a91261d4f5a371e215f0ef41
 [
 +src/main/java/com/qiuhongtao/pojo/User.java,3\2\3206fc60da831a4fdc59b54861b46c16d50d3ca4
-W
-'src/main/webapp/WEB-INF/pages/login.jsp,c\1\c107b7abb068a2d3ce0fcc79bbba601cf5055776
 p
 @src/main/java/com/qiuhongtao/controller/ContactUSController.java,4\0\40d78c018f38759951f6591384b6e001c5ea2e5d
 k
@@ -91,8 +87,6 @@ T
 $src/main/webapp/WEB-INF/js/jquery.js,7\6\76b1760a856f9bf300449091e2d6b5a0bca90e34
 _
 /src/main/java/com/qiuhongtao/util/MailUtil.java,9\4\94aa985552c9a498084e90aa8ba84eb64bb4c123
-W
-'.idea/artifacts/system_war_exploded.xml,2\9\29861c3c4bdfb3f6cfecfd52c54ba1824c5ec1a0
 q
 Asrc/main/java/com/qiuhongtao/controller/UpdateUserController.java,7\e\7e0615451f011e0fe983d083f9f38e47fc64e7bc
 w
@@ -105,8 +99,6 @@ Esrc/main/java/com/qiuhongtao/controller/AccountDetailsController.java,0\f\0f85
 Q.idea/sonarlint/securityhotspotstore/e/2/e26d0c19b8d36ca7c48f4cff571b5345333e6fb8,d\9\d99c1f34fd6a35ea905b0a7344a12189627865af
 l
 <src/main/java/com/qiuhongtao/controller/OrderController.java,6\d\6d292436433885293f833ca119f474b1e25bfda3
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 
 Q.idea/sonarlint/securityhotspotstore/e/5/e5f74a2dc28426f59fb22f8d88d8b73120a02f6d,c\0\c08a8f4f56e58280268f35a8a38bf90b991fc06e
 k
@@ -125,8 +117,6 @@ o
 ?src/main/java/com/qiuhongtao/controller/RegisterController.java,b\7\b700e67e21e08b4715735715c16d32666f770777
 
 Q.idea/sonarlint/securityhotspotstore/a/f/af055e0f588be928c1d8c958130ba75803442fdc,c\0\c0e85671d0315f484eca2811f78ba6ca2acb2673
-l
-<src/main/java/com/qiuhongtao/controller/LoginController.java,7\6\768fb33023def198878d69f58027570af324d87c
 O
 src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
 
@@ -149,7 +139,9 @@ Z
 *src/main/webapp/WEB-INF/pages/register.jsp,1\4\14f67adc1cfaa55aa38b7e0d0a82518b52348aa4
 S
 #src/main/webapp/WEB-INF/js/email.js,f\e\fe5911f6681fcfcba422ceace4c60b5595047e1a
-X
-(src/main/webapp/WEB-INF/pages/header.jsp,3\2\320aee4a387ebb980a24518777065b259ef25227
 l
 <src/main/java/com/qiuhongtao/controller/EmailController.java,0\5\05fa64f0adf8474e73d0965a198e0ce52964f5b3
+j
+:src/main/java/com/qiuhongtao/service/EmailServiceImpl.java,1\f\1f1b5283166cccfd2a2f407ebabe2e46d5464316
+W
+'src/main/webapp/WEB-INF/pages/index.jsp,3\e\3eb6fdad545383afba80f78ccc2903936fbb0ea9

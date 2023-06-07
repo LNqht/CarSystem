@@ -67,6 +67,9 @@
           <element id="library" level="project" name="Maven: net.markenwerk:utils-data-fetcher:4.0.2" />
           <element id="library" level="project" name="Maven: net.markenwerk:commons-nulls:1.0.4" />
           <element id="library" level="project" name="Maven: net.i2p.crypto:eddsa:0.3.0" />
+          <element id="library" level="project" name="Maven: com.google.zxing:core:3.5.1" />
+          <element id="library" level="project" name="Maven: io.swagger:swagger-annotations:1.5.13" />
+          <element id="library" level="project" name="Maven: cn.hutool:hutool-all:5.8.19" />
         </element>
       </element>
       <element id="directory" name="META-INF">

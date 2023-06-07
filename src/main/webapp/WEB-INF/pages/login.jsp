@@ -37,12 +37,35 @@
 		<input type="checkbox" class="checkbox" name="remember" value="1" <%="1".equals(rememberMe)? "checked":""%>/> 记住账户
    </span>
     <button type="submit" class="btn btn-default">登录</button>
+    <button id="btn-qrcode" type="button" class="btn btn-default">二维码登录</button>
 </form>	
 					</div>
 				</div>
-				
+                <div id="qrcode" class="col-sm-4 col-sm-offset-1" <c:if test="${qrCodePath == null}"> style="display: none" </c:if> >
+                    <img id="img-qrcode" src="${qrCodePath}" alt="" width="300px" height="300px">
+                </div>
 				
 			</div>
 		</div>
 	</section>
 <%@include file="footer.jsp"%>
+<script type="text/javascript">
+    $("#btn-qrcode").on("click",function (){
+        $.ajax({
+            type:"POST",
+            url:"<%=basePath%>qrCode/qrCode1",
+            success: function (result) {
+                location.reload(true);
+            }
+        })
+    });
+    $("#img-qrcode").on("click",function (){
+        $.ajax({
+            type:"POST",
+            url:"<%=basePath%>qrCode/qrCode1",
+            success: function (result) {
+                location.reload(true);
+            }
+        })
+    });
+</script>

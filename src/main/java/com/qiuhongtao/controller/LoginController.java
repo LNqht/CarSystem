@@ -3,6 +3,7 @@ package com.qiuhongtao.controller;
 import com.qiuhongtao.pojo.User;
 import com.qiuhongtao.service.UserService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.servlet.ModelAndView;
@@ -15,7 +16,7 @@ public class LoginController {
     @Resource
     private UserService userService;
 
-    @RequestMapping("/login")
+    @RequestMapping("/login*")
     public String login(){
         return "login";
     }
